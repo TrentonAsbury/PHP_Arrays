@@ -1,0 +1,81 @@
+<?php
+
+	$title = "Array 2";
+
+?>
+
+<DOCTYPE html>
+<HTML><HEAD>
+<TITLE><?php echo $title;  ?></TITLE>
+</HEAD>
+
+<BODY>
+	<p>
+		<a href="index.php">Page 1</a>&nbsp;&nbsp;<a href="p2.php">Page 2</a>&nbsp;&nbsp;<a href="p3.php">Page 3</a>
+	</p>
+	<h1>Review Arrays</h1>
+	<?php
+	$student = array(
+		1 => 2222,
+		"first_name" => "London",
+		"last_name" => "Donovan",
+		"credit_hours" => "3",
+		"grade" => "A"
+	);
+	
+		
+		foreach ($student as $key => $value) {
+			echo "$key" . ":   " . $value . "<br>";
+		}
+	
+	$names[] = "Zech";
+	$names[] = "David";
+	$names[] = "Jack";
+	$names[] = "Kelly";
+	
+	foreach ($names as $value) {
+		echo "$value, ";		
+	}
+	
+	echo '<p> Sorted Array $names </p>';
+	sort($names);
+	foreach ($names as $value) {
+		echo "$value, ";		
+	}
+	
+	echo '<p> Sorted Reverse Order Array $names </p>';
+	rsort($names);
+	foreach ($names as $value) {
+		echo "$value, ";		
+	}
+	
+	echo "<br><br>";
+	foreach ($names as $value) {
+		echo "<p> $value </p>";
+	}
+	
+	$sales = array(250, 112, 65, 7800, 65, 9875, 25);
+	echo "Before sorted: <br>";
+	foreach ($sales as $value) {
+		echo "$value, ";
+	}
+	echo "<br><br>";
+	sort($sales);
+	echo "Ordered sorted: <br>";
+	foreach ($sales as $value) {
+		echo "$value, ";
+	}
+	echo "<br><br>";
+	rsort($sales);
+	echo "Reverse order sorted: <br>";
+	foreach ($sales as $value) {
+		echo "$value, ";
+	}
+		
+	?>
+
+
+
+</BODY>
+
+</HTML> 

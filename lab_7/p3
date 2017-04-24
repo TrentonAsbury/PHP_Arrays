@@ -1,0 +1,39 @@
+<?php
+
+	$title = "Functions";
+
+?>
+
+<DOCTYPE html>
+<HTML><HEAD>
+<TITLE><?php echo $title;  ?></TITLE>
+</HEAD>
+
+<BODY>
+	
+	<a href="index.php">Page 1</a>&nbsp;&nbsp;<a href="p2.php">Page 2</a>&nbsp;&nbsp;<a href="p3.php">Page 3</a>
+	<br><br>
+	
+	<?php
+		
+		hello();
+		function hello() // FUNCTION HEADER
+		{// START
+			echo "Hello from your first ever function using oho<br>";
+			$num1 = 10;
+			$num1 *= 20;
+			return $num1;
+		}// END
+		
+		echo "<br>";
+		$total = hello();
+		echo $total;
+		echo "<br><br>";
+		hello(); 
+	?>
+
+
+
+</BODY>
+
+</HTML> 
